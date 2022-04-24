@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Kaiserrrrrr
+- 👋 Hi, I’m NotKaiser
 - 👀 I’m interested in frontend and backend web
 - 🌱 I’m currently learning javascript
 
