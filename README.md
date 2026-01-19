@@ -1,1 +1,1 @@
-nothing to see here
+Revelations 22:11
