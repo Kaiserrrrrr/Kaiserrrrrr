@@ -1,0 +1,22 @@
+name: Sync README
+on:
+  push:
+    branches: [main]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Profile Repo
+        uses: actions/checkout@v4
+
+      - name: Pushing to Pages Repo
+        uses: dmnemec/copy_file_to_another_repo_action@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.SYNC_TOKEN }}
+        with:
+          source_file: 'README.md'
+          destination_repo: '${{ github.repository_owner }}/${{ github.repository_owner }.github.io'
+          destination_folder: '/'
+          destination_filename: 'index.md' 
+          user_email: 'github-actions@github.com'
+          user_name: 'GitHub Action'
