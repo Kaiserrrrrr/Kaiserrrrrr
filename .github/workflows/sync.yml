@@ -15,7 +15,7 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.SYNC_TOKEN }}
         with:
           source_file: 'README.md'
-          destination_repo: '${{ github.repository_owner }}/${{ github.repository_owner }.github.io'
+          destination_repo: '${{ github.repository_owner }}/${{ github.repository_owner }}.github.io'
           destination_folder: '/'
           destination_filename: 'index.md' 
           user_email: 'github-actions@github.com'
